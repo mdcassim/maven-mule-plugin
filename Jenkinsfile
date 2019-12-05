@@ -10,12 +10,12 @@ pipeline {
                 sh 'mvn -B -DskipTests clean package'
             }
         }
-		stage('SonarQube analysis') {
+		/* stage('SonarQube analysis') {
 			steps {
 				echo "SonarQube Stage"
 			sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.6.0.1398:sonar'
 			}
-		}
+		} */
         stage('Test') {
             steps {
                 echo "Middle Stage"
