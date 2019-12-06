@@ -29,7 +29,7 @@ pipeline {
         stage('Deliver') {
             steps {
 				echo "Testing phase"
-                 sh 'curl -uadmin:AP5iMVLgKrY4yodTi9MeqgUPJiS -T /home/jenkins/node/workspace/Mule_CICD/target/maven-mule-plugin-1.10-SNAPSHOT.jar "http://mdcassimsait.southindia.cloudapp.azure.com:8081/artifactory/example-repo-local/$BUILD_NUMBER/maven-mule-plugin-1.10-SNAPSHOT.jar"'
+                 sh 'curl -uadmin:AP3V2ZQRcJzhsoqrbHSRN1BARNP -T /home/jenkins/node/workspace/Mule_CICD/target/maven-mule-plugin-1.10-SNAPSHOT.jar "http://mdcassimsait.southindia.cloudapp.azure.com:8081/artifactory/example-repo-local/$BUILD_NUMBER/maven-mule-plugin-1.10-SNAPSHOT.jar"'
 		}
         }
     }
