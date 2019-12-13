@@ -24,12 +24,12 @@ pipeline {
              //   always {
                    // junit 'target/surefire-reports/*.xml'
               //  }
-         //   }
+         //  }
         }
         stage('Deliver') {
             steps {
 				echo "Testing phase"
-                 sh 'curl -uadmin:AP39KsWWWRQ6hRuvygUFQuZDEYE -T /home/jenkins/node/workspace/Mule_CICD/target/maven-mule-plugin-1.10-SNAPSHOT.jar "http://mdcassimsait.southindia.cloudapp.azure.com:8081/artifactory/example-repo-local/$BUILD_NUMBER/maven-mule-plugin-1.10-SNAPSHOT.jar"'
+                // sh 'curl -uadmin:AP39KsWWWRQ6hRuvygUFQuZDEYE -T /home/jenkins/node/workspace/Mule_CICD/target/maven-mule-plugin-1.10-SNAPSHOT.jar "http://mdcassimsait.southindia.cloudapp.azure.com:8081/artifactory/example-repo-local/$BUILD_NUMBER/maven-mule-plugin-1.10-SNAPSHOT.jar"'
 	    }
         }
     }
